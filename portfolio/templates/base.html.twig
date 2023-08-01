@@ -1,16 +1,29 @@
+{# templates/base.html.twig #}
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-        {% block stylesheets %}
-        {% endblock %}
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Mon Portfolio{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Mon Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ path('app_login') }}">Connexion</a></li>
+                <li><a href="{{ path('app_register') }}">Inscription</a></li>
+                {# Vous pouvez ajouter d'autres liens de navigation ici #}
+            </ul>
+        </nav>
+    </header>
 
-        {% block javascripts %}
-        {% endblock %}
-    </head>
-    <body>
+    <div>
         {% block body %}{% endblock %}
-    </body>
+    </div>
+
+    <footer>
+        <p>© {{ "now"|date("Y") }} Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+</body>
 </html>
