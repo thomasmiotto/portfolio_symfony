@@ -1,0 +1,17 @@
+{# templates/register.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription{% endblock %}
+
+{% block body %}
+    <h1>Inscription</h1>
+
+    <form method="post">
+        {{ form_widget(form.email) }}
+        {{ form_widget(form.password) }}
+
+        <button type="submit">S'inscrire</button>
+    </form>
+    <p>Déjà inscrit ? <a href="{{ path('app_login') }}">Se connecter</a></p>
+{% endblock %}

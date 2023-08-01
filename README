@@ -1,0 +1,58 @@
+; # Etape 0 : Préparation
+
+; 1. Créez un Trello (ou utilisez tout autre outil de gestion de projet) pour organiser les tâches et rédiger les User Stories associées 
+;aux fonctionnalités du projet.
+
+; 2. Créez un repository git sur une plateforme comme GitHub pour héberger votre code. Assurez-vous d'initialiser le repository avec un 
+;fichier `README.md` pour décrire brièvement le projet.
+
+; 3. Réalisez des wireframes pour dessiner les différentes pages du parcours d’un visiteur sur votre site. Vous pouvez utiliser des outils 
+;tels que Figma, Adobe XD ou tout simplement du papier et un crayon.
+
+
+; # Etape 1 : La BDD
+
+
+; 1. Concevez la base de données (MCD) qui stockera les informations du site. Vous pouvez vous aider du cours n° 8 sur la conception des bases 
+;de données (lien fourni dans la description du projet). Cela vous aidera à définir les tables nécessaires et leurs relations.
+
+
+; # Etape 2 : Créez les entités Doctrine
+
+
+; 1. À partir du MCD conçu à l'étape précédente, créez vos entités Doctrine dans votre projet Symfony. Chaque entité représentera une table 
+;de la base de données.
+
+; 2. Utilisez les annotations Doctrine pour définir les relations entre les entités, les propriétés et les contraintes.
+
+; 3. Migrez les entités pour générer les tables correspondantes dans la base de données.
+
+
+; # Etape 3 : Le parcours d’authentification
+
+
+; 1. Mettez en place le système d'authentification qui inclut la connexion, la déconnexion et l'enregistrement d'un utilisateur.
+
+; 2. Créez les vues Twig nécessaires pour afficher les pages d'authentification et utilisez-les dans le contrôleur correspondant.
+
+; 3. Développez les actions et les méthodes nécessaires dans les contrôleurs pour gérer les différentes étapes de l'authentification.
+
+; 4. Créez votre `base.html.twig` pour avoir un template commun à toutes les pages.
+
+
+; # Etape 4 : Les CRUD, le Back-Office
+
+
+; 1. Créez un Back-Office réservé à l'administrateur qui inclut tous les CRUD (Create, Read, Update, Delete) de votre site. 
+;Cela permettra à l'administrateur de gérer les projets, le CV et autres éléments du site.
+
+; 2. Implémentez les protections nécessaires pour que seule l'administrateur ait accès au Back-Office. 
+;Vous pouvez utiliser les rôles et les autorisations pour restreindre l'accès.
+
+; 3. Utilisez les vues Twig et les contrôleurs pour gérer les opérations CRUD sur les différentes entités du projet.
+
+; 4. Testez attentivement toutes les fonctionnalités pour vous assurer que tout fonctionne correctement.
+
+; Voilà comment vous pouvez commencer à développer votre portfolio en suivant les étapes fournies. N'hésitez pas à référencer la 
+;documentation officielle de Symfony pour obtenir plus de détails sur chaque étape et pour vous aider à avancer dans votre projet. 
+;Bon développement !
